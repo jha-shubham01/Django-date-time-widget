@@ -20,7 +20,8 @@ from app1 import views
 from django.views.i18n import JavaScriptCatalog
 
 urlpatterns = [
-    path("", views.index, name='index'),
+    path("", views.index_v2, name='index'),
+    # path("", views.index, name='index'),
     path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
     path('admin/', admin.site.urls),
 ]
